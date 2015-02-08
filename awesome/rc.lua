@@ -37,7 +37,7 @@ hlcolor = "#BE2625"
 
 batwidget = widget({ type = "textbox" })
 -- vicious.register(batwidget, vicious.widgets.bat, "| Bat: <span color='" .. hlcolor .. "'>  $1$2%</span>"  , 62, "BAT0")
-vicious.register(batwidget, vicious.widgets.bat, "| Bat: <span color='" .. hlcolor .. "'>  $1$2%</span>"  , 62, "BAT0")
+vicious.register(batwidget, vicious.widgets.bat, "| Bat: $1$2%"  , 62, "BAT0")
 -- batwidget = wibox.widget.textbox()
 -- vicious.register(batwidget, vicious.widgets.bat, "Bat: <span color='" .. hlcolor .. "'>$1$2</span> | ",67,"BAT0")
 
@@ -286,11 +286,11 @@ globalkeys = awful.util.table.join(
     -- Prompt
 --    awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
     awful.key({ modkey },          "r",   function ()  awful.util.spawn_with_shell("dmenuLauncher.pl",nil) end),
-    awful.key({}	, 	   "XF86AudioLowerVolume", function() awful.util.spawn("amixer set Master 5%-")
+    awful.key({}	, 	   "XF86AudioLowerVolume", function() awful.util.spawn("amixer set Master 2%-")
     --vicious.force({ alsawidget.bar })
     -- alsawidget.notify()
     end),
-    awful.key({}	, 	   "XF86AudioRaiseVolume", function() awful.util.spawn("amixer set Master 5%+") end),
+    awful.key({}	, 	   "XF86AudioRaiseVolume", function() awful.util.spawn("amixer set Master 2%+") end),
     awful.key({}	, 	   "XF86AudioMute", function() awful.util.spawn("amixer sset Master toggle")
     awful.util.spawn("amixer sset Speaker unmute")
     awful.util.spawn("amixer sset Headphone unmute")
@@ -441,3 +441,5 @@ end
 run_once("nm-applet")
 run_once("bluetooth-applet")
 run_once("mate-power-manager")
+run_once("synclient PalmDetect=1")
+run_once("synclient VertEdgeScroll=0")
