@@ -8,7 +8,7 @@
 
 -- {{{ Main
 theme = {}
-theme.wallpaper_cmd = { "feh --bg-scale /home/freddy/.config/awesome/freddy/laughing_man_white.jpg" }
+theme.wallpaper_cmd = { "feh --bg-scale /home/freddy/.config/awesome/theme/laughing_man_white.jpg" }
 -- }}}
 
 -- {{{ Styles
