@@ -73,7 +73,7 @@ end
 -- Themes define colours, icons, and wallpapers
 -- beautiful.init("/usr/share/awesome/themes/freddy/theme.lua")
 user = os.getenv("USER")
-beautiful.init("/home/" .. user .."/.config/awesome/freddy/theme.lua")
+beautiful.init("/home/" .. user .."/.config/awesome/theme/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "xfce4-terminal"
