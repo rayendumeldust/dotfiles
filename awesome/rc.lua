@@ -96,7 +96,7 @@ layouts =
 --    awful.layout.suit.tile.bottom,
 --    awful.layout.suit.tile.top,
 --    awful.layout.suit.fair,
---    awful.layout.suit.fair.horizontal,
+       awful.layout.suit.fair.horizontal,
 --    awful.layout.suit.spiral,
 --    awful.layout.suit.spiral.dwindle,
 --    awful.layout.suit.max,
@@ -285,7 +285,7 @@ globalkeys = awful.util.table.join(
 
     -- Prompt
 --    awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
-    awful.key({ modkey },          "r",   function ()  awful.util.spawn_with_shell("dmenuLauncher.pl",nil) end),
+    awful.key({ modkey },          "r",   function ()  awful.util.spawn_with_shell("run-recent",nil) end),
     awful.key({}	, 	   "XF86AudioLowerVolume", function() awful.util.spawn("amixer set Master 2%-")
     --vicious.force({ alsawidget.bar })
     -- alsawidget.notify()
