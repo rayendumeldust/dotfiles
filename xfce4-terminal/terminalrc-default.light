@@ -24,7 +24,7 @@ FontName=Monospace 11
 MiscScrollAlternateScreen=TRUE
 TabActivityColor=#dc322f
 ColorCursor=#77bd77bd77bd
-ColorForeground=#35ad35ad35ad
-ColorBackground=#ed6aed6aed6a
+ColorForeground=#505050
+ColorBackground=#f5f5f5
 ColorPalette=#181818;#ab4642;#a1b56c;#f7ca88;#7cafc2;#ba8baf;#86c1b9;#d8d8d8;#585858;#ab4642;#a1b56c;#f7ca88;#7cafc2;#ba8baf;#86c1b9;#f8f8f8
 
