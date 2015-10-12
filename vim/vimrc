@@ -112,6 +112,7 @@ endif
 set number
 
 " Colorscheme
+set background=dark
 " Keyboard Mappings:
 " no Arrow keys
 map <Left> <Nop>
@@ -125,3 +126,8 @@ match ExtraWhitespace /\s\+$/
 
 " Show the 80 columns separator
 set colorcolumn=80
+" highlight current line
+set cursorline
+" Put temp files in a central folder
+set backupdir=~/.vimtmp,.
+set directory=~/.vimtmp,.
