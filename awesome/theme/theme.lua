@@ -9,6 +9,7 @@
 -- {{{ Main
 theme = {}
 theme.wallpaper_cmd = { "feh --bg-scale /home/freddy/.config/awesome/theme/laughing_man_white.jpg" }
+theme.wallpaper_cmd = { "feh --bg-scale /home/freddy/.config/awesome/theme/edge.jpg" }
 -- }}}
 
 -- {{{ Styles
@@ -24,7 +25,7 @@ theme.bg_urgent = "#3F3F3F"
 -- }}}
 
 -- {{{ Borders
-theme.border_width  = "2"
+theme.border_width  = "0"
 theme.border_normal = "#3F3F3F"
 theme.border_focus  = "#6F6F6F"
 theme.border_marked = "#CC9393"
@@ -77,7 +78,7 @@ theme.taglist_squares_unsel = "/usr/share/awesome/themes/zenburn/taglist/squarez
 -- }}}
 
 -- {{{ Misc
-theme.awesome_icon           = "/usr/share/awesome/themes/zenburn/awesome-icon.png"
+theme.awesome_icon           = "/home/freddy/.config/awesome/theme/f-icon.png"
 theme.menu_submenu_icon      = "/usr/share/awesome/themes/default/submenu.png"
 theme.tasklist_floating_icon = "/usr/share/awesome/themes/default/tasklist/floatingw.png"
 -- }}}

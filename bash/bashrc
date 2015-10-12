@@ -1,0 +1,19 @@
+#bashrc
+
+#alias
+alias ll="ls -l"
+alias ls="ls --color"
+alias ltspice="wine /home/freddy/programs/ltspice/scad3.exe -ini /home/freddy/ltspice/addon/LTspice.ini"
+alias mtr="mtr --curses"
+alias evince="atril"
+alias gedit="pluma"
+
+shopt -s histappend
+HISTSIZE=200000
+
+# Golang Path
+export GOPATH=$HOME/gocode
+export PATH=$PATH:$GOPATH/bin
+
+#vim mode in bash
+set -o vi

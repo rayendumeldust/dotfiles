@@ -94,7 +94,7 @@ if has("autocmd")
 
 else
 
-  set autoindent		" always set autoindenting on
+  set autoindent    " always set autoindenting on
 
 endif " has("autocmd")
 
@@ -112,6 +112,7 @@ endif
 set number
 
 " Colorscheme
+set background=dark
 " Keyboard Mappings:
 " no Arrow keys
 map <Left> <Nop>
@@ -125,3 +126,17 @@ match ExtraWhitespace /\s\+$/
 
 " Show the 80 columns separator
 set colorcolumn=80
+" highlight current line
+set cursorline
+" Put temp files in a central folder
+set backupdir=~/.vimtmp,.
+set directory=~/.vimtmp,.
+
+" Tabstop
+set tabstop=4       " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set expandtab       " tabs are spaces
+set shiftwidth=4    " something, something
+set list
+
+
