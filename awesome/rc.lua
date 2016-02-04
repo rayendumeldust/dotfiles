@@ -443,5 +443,6 @@ run_once("bluetooth-applet")
 run_once("mate-power-manager")
 run_once("synclient PalmDetect=1")
 run_once("synclient VertEdgeScroll=0")
+run_once("redshift -l 49:8.24")
 -- Set Volume to 0 at every login/reload
 -- awful.util.spawn_with_shell("amixer set Master 0")
