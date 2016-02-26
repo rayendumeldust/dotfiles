@@ -139,4 +139,6 @@ set expandtab       " tabs are spaces
 set shiftwidth=4    " something, something
 set list
 
+" Highlight color in visual mode for the terminal
+hi Visual cterm=NONE ctermfg=grey ctermbg=blue
 
