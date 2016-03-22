@@ -27,6 +27,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'junegunn/goyo.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'tpope/vim-sensible'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-surround'
 call vundle#end()
 
 " allow backspacing over everything in insert mode
