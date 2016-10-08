@@ -29,6 +29,10 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'tpope/vim-sensible'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-surround'
+Plugin 'majutsushi/tagbar'
+Plugin 'godlygeek/tabular'
+Plugin 'Valloric/YouCompleteMe'
+" Plugin 'scrooloose/syntastic'
 call vundle#end()
 
 " allow backspacing over everything in insert mode
@@ -143,4 +147,27 @@ set list
 
 " Highlight color in visual mode for the terminal
 hi Visual cterm=NONE ctermfg=grey ctermbg=blue
+
+" Syntastic default options
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Tagbar:
+
+let g:tagbar_type_ansible = {
+    \ 'ctagstype' : 'ansible',
+    \ 'kinds' : [
+        \ 't:tasks'
+    \ ],
+    \ 'sort' : 0
+\ }
+
+nmap <F8> :TagbarToggle<CR>
+
 
